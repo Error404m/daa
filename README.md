@@ -3,8 +3,8 @@
 **Team Members**
 |   Enrollment No.  |   Name   | GithubId |
 |   --------------  |   ----   | -------- |
-|    IIT2019237  |   Ishneet Sethi | hackifme1 |
-|    IIT2019238  |   Chandramani Kumar | ishneet890 | 
+|    IIT2019237  |   Ishneet Sethi | ishneet890 |
+|    IIT2019238  |   Chandramani Kumar | hackifme1 | 
 |    IIT2019239  |   Mrityunjaya Tiwari | Error404m  |
 
 **Group No-**"18"
