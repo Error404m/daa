@@ -49,6 +49,7 @@ Output
 The maximum amount of gold that can be collected 
 ---
 
+```
 **Test case**
 Though input in our code asks only for rows and columns of the matrix, we are illustrating in test cases with matrix input as well for the sake of understanding.
 ```
