@@ -73,7 +73,7 @@ Out:
 ---
 
 ### Theory
-A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
+In this paper, we have devised an algorithm to find the maximum amount of gold collected  by a miner while starting from any cell of the first column traversing a matrix of N X M size whose each cell contains the amount of gold.
 
 ---
 
