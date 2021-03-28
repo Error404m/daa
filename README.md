@@ -108,7 +108,7 @@ The space complexity of 2nd algorithm is : O(m*n)
 
 ### Conclusion 
 
-The algorithms discussed in this paper can be used to find the maximum amount of gold collected by a miner while starting from any cell of the first column traversing a matrix of N X M size whose each cell contains the amount of gold.In the matter of comparison between these two algorithms both approaches had the same space complexity. But, in Approach 1, time complexity would be higher as compared to Algorithm 2. So we can conclude that Dynamic Programming Solution i.e the Algorithm 2 is optimal and efficient.
+The algorithms discussed in this paper can be used to find the maximum amount of gold collected by a miner while starting from any cell of the first column traversing a matrix of N X M size whose each cell contains the amount of gold.In the matter of comparison between these two algorithm in Approach 1, time complexity would be higher as compared to Algorithm 2 in which it would be exponential. So we can conclude that Dynamic Programming Solution i.e the Algorithm 2 is optimal and efficient.
 
 ### References
 
