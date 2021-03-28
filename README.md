@@ -86,6 +86,7 @@ We have also discussed the recursive approach of the problem as algorithm 1 in t
 ### Analysis
 
 **Time Complexity**
+
 #Algorithm 1:
 The time complexity of 1st algorithm is : O(n*3^(m-1))
 
@@ -110,6 +111,7 @@ The algorithms discussed in this paper can be used to find the maximum amount of
 ### References
 
 References include following :
+
 [ 1 ]
 https://en.wikipedia.org/wiki/Dynamic_programming
 
