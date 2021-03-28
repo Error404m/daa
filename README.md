@@ -54,6 +54,7 @@ The maximum amount of gold that can be collected
 Though input in our code asks only for rows and columns of the matrix, we are illustrating in test cases with matrix input as well for the sake of understanding.
 ```
 Test Case-1
+```
 Input:
 3 3
 4 5 6
@@ -75,8 +76,7 @@ Input:
 Output:
 16
 ```
----
-```
+
 ### Theory
 In this paper, we have devised an efficient algorithm based on bottom-up approach of dynamic programming (algorithm 2 in the report) to find the maximum amount of gold collected  by a miner while starting from any cell of the first column and traversing a matrix of N X M size whose each cell contains the amount of gold.
 We have also discussed the recursive approach of the problem as algorithm 1 in the report.
