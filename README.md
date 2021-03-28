@@ -88,7 +88,8 @@ A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (D
 A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 
 ---
-
+Conclusion
+The algorithms discussed in this paper can be used to find the maximum amount of gold collected by a miner while starting from any cell of the first column traversing a matrix of N X M size whose each cell contains the amount of gold.In the matter of comparison between these two algorithms both approaches had the same space complexity. But, in Approach 1, time complexity would be higher as compared to Algorithm 2. So we can conclude that Dynamic Programming Solution i.e the Algorithm 2 is optimal and efficient.
 ### References
 
 A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real tex
