@@ -52,9 +52,9 @@ The maximum amount of gold that can be collected
 **Test case**
 ```
 Though input in our code asks only for rows and columns of the matrix, we are illustrating in test cases with matrix input as well for the sake of understanding.
-```
+
 Test Case-1
-```
+
 Input:
 3 3
 4 5 6
@@ -65,6 +65,7 @@ Output:
 50
 
 #--------------------------#
+
 Test Case-2
 Input:
 4 4
