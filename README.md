@@ -47,10 +47,10 @@ A single line of input contains two space separated integers N and M.
 Output
 ```
 The maximum amount of gold that can be collected 
----
 
 ```
 **Test case**
+```
 Though input in our code asks only for rows and columns of the matrix, we are illustrating in test cases with matrix input as well for the sake of understanding.
 ```
 Test Case-1
@@ -62,6 +62,7 @@ Input:
 
 Output:
 50
+
 #--------------------------#
 Test Case-2
 Input:
@@ -70,12 +71,12 @@ Input:
 2 2 4 1
 5 0 2 3
 0 6 1 2
+
 Output:
 16
 ```
-
 ---
-
+```
 ### Theory
 In this paper, we have devised an efficient algorithm based on bottom-up approach of dynamic programming (algorithm 2 in the report) to find the maximum amount of gold collected  by a miner while starting from any cell of the first column and traversing a matrix of N X M size whose each cell contains the amount of gold.
 We have also discussed the recursive approach of the problem as algorithm 1 in the report.
@@ -101,7 +102,9 @@ The space complexity of 1st algorithm is : O(m)
 The space complexity of 2nd algorithm is : O(m*n)
 
 ---
-Conclusion
+
+### Conclusion 
+
 The algorithms discussed in this paper can be used to find the maximum amount of gold collected by a miner while starting from any cell of the first column traversing a matrix of N X M size whose each cell contains the amount of gold.In the matter of comparison between these two algorithms both approaches had the same space complexity. But, in Approach 1, time complexity would be higher as compared to Algorithm 2. So we can conclude that Dynamic Programming Solution i.e the Algorithm 2 is optimal and efficient.
 
 ### References
