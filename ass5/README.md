@@ -27,7 +27,7 @@ https://github.com/Error404m/daa.git
 Project Initialize 
 ```
 cd daa
-cd ass2
+cd ass5
 
 ```
 ---
