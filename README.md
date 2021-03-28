@@ -19,7 +19,6 @@ Find the maximum amount of gold collected  by a miner while starting from any ce
 
 ---
 ## How to use code
-A quick and simplified answer is that Lorem Ipsum refers to text that the DTP (Desktop Publishing) industry use as replacement text when the real text is not available. ... Lorem Ipsum is dummy text which has no meaning however looks very similar to real text.
 ```
 #Download project
 https://github.com/Error404m/daa.git
@@ -28,7 +27,10 @@ Project Initialize
 ```
 cd daa
 cd ass2
-
+#create file
+touch readme.md
+touch rec_src_code.cpp
+touch dp_src_code.cpp
 ```
 ---
 
