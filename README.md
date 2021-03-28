@@ -93,7 +93,8 @@ The time complexity of 1st algorithm is : O(n*3^(m-1))
 
 #Algorithm 2:
 The worst case time complexity of 2nd algorithm is : O(m*n)
-Tthe best case time complexity will be : O(n)
+
+The best case time complexity will be : O(n)
 
 **Space Complexity**
 
