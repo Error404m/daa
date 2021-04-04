@@ -34,8 +34,8 @@ cd ass6
 
 Run the code
 ```
-g++ rec_src_code.cpp
-g++ dp_src_code.cpp
+g++ Rec_src_code.cpp
+g++ Dp_src_code.cpp
 
 Follow the previous step by entering ./a.out
 ```
