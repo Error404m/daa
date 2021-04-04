@@ -34,9 +34,10 @@ cd ass6
 
 Run the code
 ```
-g++ 2loop_code.cpp
+g++ Two-loop_src_code.cpp
 g++ Rec_src_code.cpp
 g++ Dp_src_code.cpp
+g++ Manacher's_src_Code.cpp
 
 Follow the previous step by entering ./a.out
 ```
@@ -95,6 +96,9 @@ The best case time complexity will be : O(n*n)
 
 The average case time complexity will be : O(n*n)
 
+#Algorithm 4:
+The time complexity of 4th algorithm is : O(n)
+
 **Space Complexity**
 
 Here, n = input string length
@@ -108,11 +112,17 @@ The space complexity of 2nd algorithm is : O(k) i.e, constant space
 #Algorithm 3:
 The space complexity of 3rd algorithm is : O(n*n)
 
+#Algorithm 4:
+The space complexity of 4th algorithm is : O(n)
+
 ---
 
 ### Conclusion 
 
-The algorithms discussed in this paper can be used to find the number of palindromic substrings. In the matter of comparison between these two algorithms,in Approach 1, time complexity i.e O(3^N) and in approach 2 it would be O(N^3).Both would be higher as compared to Algorithm 3 i.e (O(N^2)). So we can conclude that Dynamic Programming Solution i.e the Algorithm 3 is optimal and efficient.
+The algorithms discussed in this paper can be used to find the number of palindromic substrings. In the matter of comparison between these two algorithms,in Approach 1, time complexity i.e  O(3^N) and in approach 2 it would be O(N^3) . Both would be higher as compared to Algorithm 3 i.e  O(N^2). 
+So we can conclude that Dynamic Programming Solution i.e the Algorithm 3 is optimal and efficient among them.
+However, there exists a better standard algorithm named Manacher’s algorithm with time and space complexity of O(n). We have discussed about it also as algorithm 4.
+
 
 ### References
 
