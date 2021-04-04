@@ -34,6 +34,7 @@ cd ass6
 
 Run the code
 ```
+g++ 2loop_code.cpp
 g++ Rec_src_code.cpp
 g++ Dp_src_code.cpp
 
@@ -70,8 +71,8 @@ Output:
 ```
 
 ### Theory
-In this paper, we have devised an efficient algorithm based on bottom-up approach of dynamic programming (algorithm 2 in the report) to find the count of different palindromic substrings in the input string.
-We have also discussed the recursive approach of the problem as algorithm 1 in the report.
+In this paper, we have devised an efficient algorithm based on bottom-up approach of dynamic programming (algorithm 3 in the report) to find the count of different palindromic substrings in the input string.
+We have also discussed the recursive approach of the problem as algorithm 1 and two-loop strategy as algorithm 2 in the report.
 
 ---
 
@@ -82,10 +83,13 @@ We have also discussed the recursive approach of the problem as algorithm 1 in t
 Here, n = input string length
 
 #Algorithm 1:
-The time complexity of 1st algorithm is : O(n^3)
+The time complexity of 1st algorithm is : O(3^n)
 
 #Algorithm 2:
-The worst case time complexity of 2nd algorithm is : O(n*n)
+The time complexity of 2nd algorithm is : O(n^3)
+
+#Algorithm 3:
+The worst case time complexity of 3rd algorithm is : O(n*n)
 
 The best case time complexity will be : O(n*n)
 
@@ -93,17 +97,22 @@ The average case time complexity will be : O(n*n)
 
 **Space Complexity**
 
+Here, n = input string length
+
 #Algorithm 1:
-The space complexity of 1st algorithm is : O(m)
+The space complexity of 1st algorithm is : O(n)
 
 #Algorithm 2:
-The space complexity of 2nd algorithm is : O(n*n)
+The space complexity of 2nd algorithm is : O(k) i.e, constant space
+
+#Algorithm 3:
+The space complexity of 3rd algorithm is : O(n*n)
 
 ---
 
 ### Conclusion 
 
-The algorithms discussed in this paper can be used to find the number of palindromic substrings. In the matter of comparison between these two algorithms,in Approach 1, time complexity i.e O(N^3) would be higher as compared to Algorithm 2 i.e (O(N^2)). So we can conclude that Dynamic Programming Solution i.e the Algorithm 2 is optimal and efficient.
+The algorithms discussed in this paper can be used to find the number of palindromic substrings. In the matter of comparison between these two algorithms,in Approach 1, time complexity i.e O(3^N) and in approach 2 it would be O(N^3).Both would be higher as compared to Algorithm 3 i.e (O(N^2)). So we can conclude that Dynamic Programming Solution i.e the Algorithm 3 is optimal and efficient.
 
 ### References
 
