@@ -52,7 +52,7 @@ ll count_palindromes(string s)
 
 int main()
 {
-	cout << "Enter a string of length greater than or equal to 50" << endl;
+	cout << "Enter a string of length less than or equal to 50" << endl;
 	string str;
 	cin >> str;
 
