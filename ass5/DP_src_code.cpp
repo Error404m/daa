@@ -82,6 +82,7 @@ int main()
 
      // Storing and then printing the value returned by the maxm_gold function,i.e maximum amount of gold collected
      ll maxm = maxm_Gold_amnt(n,m,gold_matrix);
+    
      cout<<"\nThe maximum amount of gold that can be collected is : ";
      cout << maxm<<endl;
 
