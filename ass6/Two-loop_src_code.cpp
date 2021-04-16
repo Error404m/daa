@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
+
 bool ispalindrome(string str, ll l, ll r) {
     // check for first and last character iteratively
     while(l <= r) {
@@ -9,6 +10,7 @@ bool ispalindrome(string str, ll l, ll r) {
     }
     return true;
   }
+
 int main(){
 	//Enter a string
 		string s;
@@ -22,6 +24,7 @@ int main(){
         }
         //Print the count of the substrings
         cout<<count<<endl;
+	
         return 0;
     
 }   
