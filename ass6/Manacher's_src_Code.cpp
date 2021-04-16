@@ -1,46 +1,108 @@
-#include<bits/stdc++.h>
+
+#include <bits/stdc++.h>
 using namespace std;
-#define ll long long int
-int main()
+#include <string.h>
+
+	string text;
+void findLongestPalindromicString()
 {
-	//Accept the string
-string s;
-cin>>s;
-int n=s.length();
-vector<int> d1(n);
-//d1 stores the longestOdd Palindrome for indices
-for (int i = 0, l = 0, r = -1; i < n; i++) {
-    int k = (i > r) ? 1 : min(d1[l + r - i], r - i + 1);
-    while (0 <= i - k && i + k < n && s[i - k] == s[i + k]) {
-        k++;
-    }
-    d1[i] = k--;
-    if (i + k > r) {
-        l = i - k;
-        r = i + k;
-    }
-}
+	int N = text.length();
+	if(N == 0)
+		return;
+	N = 2*N + 1; //Position count
+	int L[N]; //LPS Length Array
+	L[0] = 0;
+	L[1] = 1;
+	int C = 1; 
+	int R = 2; 
+	int i = 0; 
+	int iMirror; 
+	int expand = -1;
+	int diff = -1;
+	int maxLPSLength = 0;
+	int maxLPSCenterPosition = 0;
+	int start = -1;
+	int end = -1;
+
+	for (i = 2; i < N; i++)
+	{
 	
-	vector<int> d2(n);
-	//d2 stores the longestEven palindromes  for indices
-for (int i = 0, l = 0, r = -1; i < n; i++) {
-    int k = (i > r) ? 0 : min(d2[l + r - i + 1], r - i + 1);
-    while (0 <= i - k - 1 && i + k < n && s[i - k - 1] == s[i + k]) {
-        k++;
-    }
-    d2[i] = k--;
-    if (i + k > r) {
-        l = i - k - 1;
-        r = i + k ;
-    }
+		iMirror = 2*C-i;
+		
+		expand = 0;
+		diff = R - i;
+	
+		if(diff >= 0)
+		{
+			if(L[iMirror] < diff) // Case 1
+				L[i] = L[iMirror];
+			else if(L[iMirror] == diff && R == N-1) // Case 2
+				L[i] = L[iMirror];
+			else if(L[iMirror] == diff && R < N-1) // Case 3
+			{
+					L[i] = L[iMirror];
+					expand = 1; // expansion required
+			}
+			else if(L[iMirror] > diff) // Case 4
+			{
+				L[i] = diff;
+				expand = 1; // expansion required
+			}
+		}
+		else
+		{
+			L[i] = 0;
+			expand = 1; // expansion required
+		}
+		
+		if (expand == 1)
+		{
+		
+			while (((i + L[i]) < N && (i - L[i]) > 0) &&
+				( ((i + L[i] + 1) % 2 == 0) ||
+				(text[(i + L[i] + 1)/2] == text[(i-L[i]-1)/2] )))
+			{
+				L[i]++;
+			}
+		}
+
+		if(L[i] > maxLPSLength) // Track maxLPSLength
+		{
+			maxLPSLength = L[i];
+			maxLPSCenterPosition = i;
+		}
+
+
+		if (i + L[i] > R)
+		{
+			C = i;
+			R = i + L[i];
+		}
+	
+	
+	}
+	
+	start = (maxLPSCenterPosition - maxLPSLength)/2;
+	end = start + maxLPSLength - 1;
+	
+int ans=0;
+for(i=0;i<N;i++)
+{
+	if(i%2==0)
+	ans+=(L[i]/2);
+	else
+	ans+=(L[i]/2+1);
 }
-int answer = 0;
-        for(int i=0; i < d1.size(); ++i){
-            answer += d1[i]/2 + 1; 
-        }
-       
-        for(int i=0; i < d2.size(); ++i){
-            answer += d2[i]/2; //2,4,6,8... => longestEven[i] / 2
-        }
-        cout<<answer<<endl;
+cout<<ans<<endl;
+	printf("\n");
+}
+
+
+int main(int argc, char *argv[])
+{
+	cin>>text;
+
+	findLongestPalindromicString();
+
+	return 0;
 }
